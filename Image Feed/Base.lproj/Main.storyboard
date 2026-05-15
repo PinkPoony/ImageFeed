@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oue-wX-zbf">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -8,6 +8,72 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Profile-->
+        <scene sceneID="RgZ-8y-lOp">
+            <objects>
+                <viewController title="Profile" id="oue-wX-zbf" customClass="ProfileViewController" customModule="Image_Feed" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fta-R8-4VH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Екатерина Новикова" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCf-LZ-1zW" userLabel="Name Label">
+                                <rect key="frame" x="16" y="154" width="382" height="27.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@ekaterina_nov" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MC0-ag-rch" userLabel="Login Name Label">
+                                <rect key="frame" x="16" y="189.5" width="382" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, world!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5l-bY-SQS" userLabel="Desription Label">
+                                <rect key="frame" x="16" y="213.5" width="75.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" translatesAutoresizingMaskIntoConstraints="NO" id="yFb-VK-R4w" userLabel="Avatar Image View">
+                                <rect key="frame" x="16" y="76" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="56g-OZ-i2c"/>
+                                    <constraint firstAttribute="width" secondItem="yFb-VK-R4w" secondAttribute="height" multiplier="1:1" id="e8A-IO-50m"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2A-Fd-IBA" userLabel="Logout Button">
+                                <rect key="frame" x="346" y="89" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="MTQ-kC-yCa"/>
+                                    <constraint firstAttribute="height" constant="44" id="RTm-5d-lrv"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Exit"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SZ7-ma-Vzi"/>
+                        <color key="backgroundColor" red="0.102722168" green="0.1057739258" blue="0.1309814453" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="a5l-bY-SQS" firstAttribute="top" secondItem="MC0-ag-rch" secondAttribute="bottom" constant="8" id="1Bm-vv-lVz"/>
+                            <constraint firstItem="SZ7-ma-Vzi" firstAttribute="trailing" secondItem="F2A-Fd-IBA" secondAttribute="trailing" constant="24" id="8HV-FT-LxO"/>
+                            <constraint firstItem="MC0-ag-rch" firstAttribute="top" secondItem="wCf-LZ-1zW" secondAttribute="bottom" constant="8" id="DTv-Vp-ceY"/>
+                            <constraint firstItem="wCf-LZ-1zW" firstAttribute="leading" secondItem="Fta-R8-4VH" secondAttribute="leading" constant="16" id="I6f-sE-ye8"/>
+                            <constraint firstItem="yFb-VK-R4w" firstAttribute="top" secondItem="Fta-R8-4VH" secondAttribute="top" constant="76" id="KqZ-bl-pHx"/>
+                            <constraint firstItem="SZ7-ma-Vzi" firstAttribute="trailing" secondItem="MC0-ag-rch" secondAttribute="trailing" constant="16" id="Nv8-Tw-prM"/>
+                            <constraint firstItem="MC0-ag-rch" firstAttribute="leading" secondItem="Fta-R8-4VH" secondAttribute="leading" constant="16" id="Owd-ot-nrV"/>
+                            <constraint firstItem="SZ7-ma-Vzi" firstAttribute="trailing" secondItem="a5l-bY-SQS" secondAttribute="trailing" constant="322.5" id="RMs-qy-5Ku"/>
+                            <constraint firstItem="wCf-LZ-1zW" firstAttribute="top" secondItem="Fta-R8-4VH" secondAttribute="top" constant="154" id="bgh-Xv-Vyb"/>
+                            <constraint firstItem="a5l-bY-SQS" firstAttribute="leading" secondItem="SZ7-ma-Vzi" secondAttribute="leading" constant="16" id="eM4-pc-kz2"/>
+                            <constraint firstItem="F2A-Fd-IBA" firstAttribute="top" secondItem="Fta-R8-4VH" secondAttribute="top" constant="89" id="hrc-Xw-dke"/>
+                            <constraint firstItem="SZ7-ma-Vzi" firstAttribute="trailing" secondItem="wCf-LZ-1zW" secondAttribute="trailing" constant="16" id="qmE-HB-aIV"/>
+                            <constraint firstItem="yFb-VK-R4w" firstAttribute="leading" secondItem="SZ7-ma-Vzi" secondAttribute="leading" constant="16" id="toX-cJ-xbn"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cIT-p5-a4s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="757" y="92"/>
+        </scene>
         <!--ImageList-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -100,6 +166,8 @@
     </scenes>
     <resources>
         <image name="0" width="1600" height="1059"/>
+        <image name="Exit" width="24" height="24"/>
         <image name="like_button_on" width="42" height="42"/>
+        <image name="photo" width="350" height="350"/>
     </resources>
 </document>
