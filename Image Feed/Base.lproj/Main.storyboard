@@ -22,7 +22,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cIT-p5-a4s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-407.46268656716416" y="-413.2723112128146"/>
+            <point key="canvasLocation" x="-346" y="303"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="9in-Wb-LDR">
@@ -38,13 +38,13 @@
                         </tabBarAppearance>
                     </tabBar>
                     <connections>
-                        <segue destination="oue-wX-zbf" kind="relationship" relationship="viewControllers" id="veI-PA-JSC"/>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="9eo-IX-w9F"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="khb-Ri-c77"/>
+                        <segue destination="oue-wX-zbf" kind="relationship" relationship="viewControllers" id="AsK-Kf-RCH"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hJl-jG-8pP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1520" y="-148"/>
+            <point key="canvasLocation" x="-1412" y="-164"/>
         </scene>
         <!--ImageList-->
         <scene sceneID="tne-QT-ifu">
@@ -127,7 +127,7 @@
                             <constraint firstAttribute="top" secondItem="0ZD-Gs-GgP" secondAttribute="top" id="l0f-Ng-QVT"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="tab_editorial_active" id="oBD-NV-Jiy"/>
+                    <tabBarItem key="tabBarItem" title="" image="tab_editorial_active" id="oBD-NV-Jiy"/>
                     <navigationItem key="navigationItem" id="lih-80-CdM"/>
                     <connections>
                         <outlet property="tableView" destination="0ZD-Gs-GgP" id="Fuw-16-5ad"/>
@@ -136,7 +136,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-407" y="323"/>
+            <point key="canvasLocation" x="-346" y="-487"/>
         </scene>
         <!--Single Image View Controller-->
         <scene sceneID="LzE-KJ-xR2">
@@ -196,7 +196,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ypY-Kd-hyV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="652" y="323"/>
+            <point key="canvasLocation" x="712" y="-487"/>
         </scene>
     </scenes>
     <resources>
